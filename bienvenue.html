@@ -6,21 +6,11 @@
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .widget {
-      background-color: #ffffff;
-      padding: 24px 32px;
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
       font-size: 1.2rem;
-      color: #fff;
+      color: #333;
+      background: transparent;
+      margin: 0;
+      padding: 0;
     }
 
     .highlight {
@@ -30,7 +20,7 @@
   </style>
 </head>
 <body>
-  <div class="widget" id="greeting">
+  <div id="greeting">
     Chargement...
   </div>
 
@@ -56,7 +46,8 @@
     }
 
     updateGreeting();
-    setInterval(updateGreeting, 60000); // Met à jour chaque minute
+    setInterval(updateGreeting, 60000); // mise à jour chaque minute
   </script>
 </body>
 </html>
+
